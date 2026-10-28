@@ -1,0 +1,11 @@
+aiohttp
+bip_utils
+solders
+base58
+dnspython
+psycopg2-binary
+pymysql
+redis
+pymongo
+boto3
+eth-account
