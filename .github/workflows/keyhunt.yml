@@ -1,0 +1,43 @@
+name: keyhunt
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keyhunt
+  cancel-in-progress: false
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: lov
+        run: python keyhunt.py --pages 3 --max-index 5 --max-files 4000 --verify
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+          KEYHUNT_TIMEOUT: '8'
+
+      - name: ulož stav
+        run: |
+          git config user.name  keyhunt-bot
+          git config user.email bot@localhost
+          git add keyhunt.db keyhunt_hits.json || true
+          git commit -m "keyhunt update" || true
+          git push || true
