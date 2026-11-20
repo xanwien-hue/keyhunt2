@@ -1,8 +1,1355 @@
 {
   "crypto": {},
   "swept": {},
-  "db": {},
+  "db": {
+    "mongodb+srv://365infayou:Jv9lwv6csl7J1Jp5@cluster365.sxln4q8.mongodb.net/infa?retryWrites=true&w=majority&appName=Cluster365": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "anurag8824/purediamond",
+      "path": "365.txt",
+      "detail": "OK datab\u00e1zy=Page3,infa,admin,local"
+    }
+  },
   "aws": {},
-  "api": {},
-  "detected": {}
+  "api": {
+    "AIzaSyAjqxNLXAb9SRu0kI4Qmcd4g3ZSZtBMwQQ": {
+      "name": "google",
+      "cat": "api",
+      "check": true,
+      "repo": "tempo1406/iccp_be_ai",
+      "path": "run.md",
+      "detail": "OK ok"
+    },
+    "8213891587:AAEyMhwHeBFn5Bs_iFQ5S80R88A2tQv573c": {
+      "name": "telegram_bot",
+      "cat": "api",
+      "check": true,
+      "repo": "melo-maniac-29/civic-grievance",
+      "path": "cred.md",
+      "detail": "OK ok"
+    }
+  },
+  "detected": {
+    "postgresql://...": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "enuno/unifi-mcp-server",
+      "path": "API.md",
+      "detail": "ERR OperationalError: could not translate host name \"...\" to address: Name or service not kn"
+    },
+    "postgres://user:password@host:port/dbname`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "daheige/hermes-ai",
+      "path": "env.md",
+      "detail": "ERR OperationalError: invalid integer value \"port\" for connection option \"port\"\n"
+    },
+    "redis://[:password@]host:port/db[?options]`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "daheige/hermes-ai",
+      "path": "env.md",
+      "detail": "ERR ValueError: ']host' does not appear to be an IPv4 or IPv6 address"
+    },
+    "redis://host1:6379,redis://host2:6379`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "daheige/hermes-ai",
+      "path": "env.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379,redis:'"
+    },
+    "redis://:@localhost:6379/0?dial_timeout=3&db=1&read_timeout=6s&max_retries=2": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "daheige/hermes-ai",
+      "path": "env.md",
+      "detail": "ERR TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'dial"
+    },
+    "redis://:password@redis1:6379,redis://:password@redis2:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "daheige/hermes-ai",
+      "path": "env.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379,redis:'"
+    },
+    "mysql://user:pass@host:port/schema": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "Zingle/micros",
+      "path": "php.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as 'port'"
+    },
+    "redis://:pass@host:port/database": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Zingle/micros",
+      "path": "php.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as 'port'"
+    },
+    "redis://:XXXX@localhost:6379/0?ttl=600": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "hull/hull-node",
+      "path": "API.md",
+      "detail": "ERR TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'ttl'"
+    },
+    "redis://:@localhost:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "daheige/hermes-ai",
+      "path": "env.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "postgresql://postgres:password@localhost/peeljobs": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "MicroPyramid/opensource-job-portal",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "redis://:password@host:6379/0`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "enuno/unifi-mcp-server",
+      "path": "API.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to host:6379. Temporary failure in name resolution"
+    },
+    "redis://localhost:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "webjars/webjars",
+      "path": "DEV.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://localhost:6379/1": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "MicroPyramid/opensource-job-portal",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://localhost:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "MicroPyramid/opensource-job-portal",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://sentinel1:26379,sentinel2:26379,sentinel3:26379/mymaster/1": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '26379,sentinel2:26379,sent"
+    },
+    "postgresql://peeljobs_user:password@localhost/peeljobs_prod": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "MicroPyramid/opensource-job-portal",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "redis://localhost:6379/1/remote/path/": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://localhost:6379/1/src/": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://localhost:6379/2/dst/": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "rediss://`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to `:6379. Name or service not known."
+    },
+    "redis://...": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yoligehude14753/ecom-agent",
+      "path": "SKILL.md",
+      "detail": "ERR UnicodeError: encoding with 'idna' codec failed (UnicodeError: label empty or too lo"
+    },
+    "redis://`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to `:6379. Name or service not known."
+    },
+    "postgres://`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "wisecort/LogDeck",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"`\" to address: Name or service not know"
+    },
+    "redis://dest:6379/1/": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to dest:6379. Temporary failure in name resolution"
+    },
+    "redis://redis:6379/1": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://:PASSWORD@HOST:6379`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Nickwenniyxiao-art/nordhjem-medusa-backend",
+      "path": "ENV.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379`'"
+    },
+    "redis://source:6379/1": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to source:6379. Temporary failure in name resoluti"
+    },
+    "redis://source:6379/1/": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to source:6379. Temporary failure in name resoluti"
+    },
+    "redis://dest:6379/1": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "yuhr123/juicefs-skill",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to dest:6379. Temporary failure in name resolution"
+    },
+    "redis://localhost:6379`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ang3lkar/bull-cli",
+      "path": "SPEC.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379`'"
+    },
+    "redis://:": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Hoaivuxuan/marker-ocr-api",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://redis:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Hoaivuxuan/marker-ocr-api",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://:password@host:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ang3lkar/bull-cli",
+      "path": "SPEC.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to host:6379. Temporary failure in name resolution"
+    },
+    "postgres://USER:PASSWORD@HOST:5432/DB_NAME`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Nickwenniyxiao-art/nordhjem-medusa-backend",
+      "path": "ENV.md",
+      "detail": "ERR OperationalError: could not translate host name \"HOST\" to address: Temporary failure in "
+    },
+    "postgresql://user:pass@localhost:5432/simba": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "GitHamza0206/simba",
+      "path": "AGENT.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres:///terrier?host=/run/postgresql`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "ScottyLabs/terrier-old",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server on socket \"/run/postgresql`/.s.PGSQL.5432\" failed"
+    },
+    "redis://username:password@host:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ang3lkar/bull-cli",
+      "path": "SPEC.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to host:6379. Temporary failure in name resolution"
+    },
+    "redis://host:6379`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ScottyLabs/terrier-old",
+      "path": "SETUP.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379`'"
+    },
+    "redis://:password@host:6379`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ScottyLabs/terrier-old",
+      "path": "SETUP.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379`'"
+    },
+    "postgres://user:pass@host:5432/terrier`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "ScottyLabs/terrier-old",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "redis://...`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Dictionar32/tailwind-oxide",
+      "path": "SETUP.md",
+      "detail": "ERR UnicodeError: encoding with 'idna' codec failed (UnicodeError: label empty or too lo"
+    },
+    "mongodb://mongo:27017`": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "tempo1406/iccp_be_ai",
+      "path": "run.md",
+      "detail": "ERR ValueError: Port contains non-digit characters. Hint: username and password must b"
+    },
+    "mysql://user:pass@`": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "wisecort/LogDeck",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: (2003, \"Can't connect to MySQL server on '`' ([Errno -2] Name or servi"
+    },
+    "redis://redis.example.com:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Hoaivuxuan/marker-ocr-api",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error -5 connecting to redis.example.com:6379. No address associated w"
+    },
+    "redis://:dev-redis-password@redis.example.internal:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "WebWorkerTech/webworker.tech",
+      "path": "TODO.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to redis.example.internal:6379. Name or service no"
+    },
+    "redis://:thisshouldbesecret@host.docker.internal/": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "in-the-keyhole/now-playing-quarkus",
+      "path": "DEMO.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to host.docker.internal:6379. Name or service not "
+    },
+    "redis://[:password@]host:port/database": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "angelxlakra/efs-salon-os",
+      "path": "env.txt",
+      "detail": "ERR ValueError: ']host' does not appear to be an IPv4 or IPv6 address"
+    },
+    "postgresql://host.docker.internal:5432/now-playing": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "in-the-keyhole/now-playing-quarkus",
+      "path": "DEMO.md",
+      "detail": "ERR OperationalError: could not translate host name \"host.docker.internal\" to address: Name "
+    },
+    "redis://[username]:[password]@[url]:[port": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "tnsc/secure-node-express-api-boilerplate",
+      "path": "env.txt",
+      "detail": "ERR ValueError: 'url' does not appear to be an IPv4 or IPv6 address"
+    },
+    "redis://:201a04a2db24eb9e7c2aa516fd95f9aa98103ac30fdc2a6003f839e94a488fd1@redis:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "angelxlakra/efs-salon-os",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://:YOUR_PASSWORD@redis:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "angelxlakra/efs-salon-os",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://:rediskeydbsecretpassword@keydb:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "jagdishpatil07/sas_777",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error -3 connecting to keydb:6379. Temporary failure in name resolutio"
+    },
+    "redis://:redisschedulersecretpassword@redis-scheduler:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "jagdishpatil07/sas_777",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis-scheduler:6379. Temporary failure in name"
+    },
+    "redis://:redissecretpassword@redis:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "jagdishpatil07/sas_777",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://:${REDIS_PASSWORD}@127.0.0.1:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "TheBabelDragon/aurora-swarm-btc",
+      "path": "MESH.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused."
+    },
+    "redis://:PASSWORD@HUB_IP:6379/0`.": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "TheBabelDragon/aurora-swarm-btc",
+      "path": "MESH.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to hub_ip:6379. Temporary failure in name resoluti"
+    },
+    "rediss://`**": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Uncoil-dev/Uncoil",
+      "path": "task.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to `**:6379. Name or service not known."
+    },
+    "rediss://`.": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Uncoil-dev/Uncoil",
+      "path": "task.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to `.:6379. Name or service not known."
+    },
+    "redis://:qwb@127.0.0.1:5678/1": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "bgppseries/privacy_assessment",
+      "path": "other.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to 127.0.0.1:5678. Connection refused."
+    },
+    "redis://:qwb@127.0.0.1:6379/1": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "bgppseries/privacy_assessment",
+      "path": "other.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused."
+    },
+    "postgresql://myinvoice:password@localhost:5432/myinvoice_dev?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "prathinsajith-prop/myinvoice",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgresql://myinvoice:password@localhost:5432/myinvoice_dev": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "prathinsajith-prop/myinvoice",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "mongodb+srv://`": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "wisecort/LogDeck",
+      "path": "SPEC.md",
+      "detail": "ERR ConfigurationError: The DNS query name does not exist: _mongodb._tcp.`."
+    },
+    "redis://HOST.cache.amazonaws.com:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "prathinsajith-prop/myinvoice",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to host.cache.amazonaws.com:6379. Name or service "
+    },
+    "redis://default:PASSWORD@HOST:PORT": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "prathinsajith-prop/myinvoice",
+      "path": "SETUP.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as 'PORT'"
+    },
+    "redis://:YOUR_PASSWORD@localhost:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "prathinsajith-prop/myinvoice",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "postgresql://postgres:YOUR_PASSWORD@localhost:5432/triage_nurse_ai_bot": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Taha-448/Historia",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "redis://:YOUR_PASSWORD@your-redis-host:port": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Taha-448/Historia",
+      "path": "SETUP.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as 'port'"
+    },
+    "postgresql://user:password@host.region.rds.amazonaws.com:5432/dbname?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "prathinsajith-prop/myinvoice",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"host.region.rds.amazonaws.com\" to addre"
+    },
+    "redis://redistogo:1234567feedfacebeefa1e1234567@dory.redistogo.com:10534": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "wizardforcel/think-dast-zh",
+      "path": "14.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to dory.redistogo.com:10534. Name or service not k"
+    },
+    "mongodb://username:password@host:port/database?options": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "Shivaprasadfarale/restau",
+      "path": "SETUP.md",
+      "detail": "ERR InvalidURI: MongoDB URI options are key=value pairs"
+    },
+    "redis://:redispassword@localhost:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Shivaprasadfarale/restau",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://password@host:port": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Shivaprasadfarale/restau",
+      "path": "SETUP.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as 'port'"
+    },
+    "redis://host:port": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Shivaprasadfarale/restau",
+      "path": "SETUP.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as 'port'"
+    },
+    "postgresql://grievance:grievance_secret_2024@localhost:5432/grievance`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "melo-maniac-29/civic-grievance",
+      "path": "cred.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "redis://:redis_secret_2024@localhost:6379/0`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "melo-maniac-29/civic-grievance",
+      "path": "cred.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://:TCtNvljreU@host.docker.internal/": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "in-the-keyhole/now-playing-quarkus-basics",
+      "path": "DEMO.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to host.docker.internal:6379. Name or service not "
+    },
+    "postgres://osinthub:password@db:5432/osinthub": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Nakajito/osint_hub",
+      "path": "plan.md",
+      "detail": "ERR OperationalError: could not translate host name \"db\" to address: Temporary failure in na"
+    },
+    "redis://:password@redis:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Nakajito/osint_hub",
+      "path": "plan.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "postgresql://mentary_user:mentary_password@localhost:5432/mentary?schema=public": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "kritgarb/rs-squad5",
+      "path": "env.txt",
+      "detail": "ERR ProgrammingError: invalid dsn: invalid URI query parameter: \"schema\"\n"
+    },
+    "redis://:redis_password@localhost:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "kritgarb/rs-squad5",
+      "path": "env.txt",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://\u2026`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "radiustechsystems/radius-payment-gateway",
+      "path": "TODO.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to \u2026`:6379. Name or service not known."
+    },
+    "redis://:yourpassword@host:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "tuxqeq/tux.ai",
+      "path": "todo.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to host:6379. Temporary failure in name resolution"
+    },
+    "redis://127.0.0.1:6379/0`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "hyperflow-wms/hyperflow",
+      "path": "SPEC.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused."
+    },
+    "mongodb://localhost:27017**": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "VarunArora14/url-shortener-system-design",
+      "path": "Notes.md",
+      "detail": "ERR ValueError: Port contains non-digit characters. Hint: username and password must b"
+    },
+    "mongodb://mongo:27017**": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "VarunArora14/url-shortener-system-design",
+      "path": "Notes.md",
+      "detail": "ERR ValueError: Port contains non-digit characters. Hint: username and password must b"
+    },
+    "mongodb://mongo2:27017`.": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "VarunArora14/url-shortener-system-design",
+      "path": "Notes.md",
+      "detail": "ERR ValueError: Port contains non-digit characters. Hint: username and password must b"
+    },
+    "mongodb://mongo:27017`).": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "VarunArora14/url-shortener-system-design",
+      "path": "Notes.md",
+      "detail": "ERR ValueError: Port contains non-digit characters. Hint: username and password must b"
+    },
+    "redis://:12345@103.90.225.95:6380/0`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "tempo1406/iccp_be_ai",
+      "path": "run.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to 103.90.225.95:6380. Connection refused."
+    },
+    "redis://[:password]@host:port[/db_number]`.": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "VarunArora14/url-shortener-system-design",
+      "path": "Notes.md",
+      "detail": "ERR ValueError: Invalid IPv6 URL"
+    },
+    "redis://localhost:6379/0`.": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "VarunArora14/url-shortener-system-design",
+      "path": "Notes.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://redis:6379/0`.": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "VarunArora14/url-shortener-system-design",
+      "path": "Notes.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://:12345@103.90.225.95:6380/1`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "tempo1406/iccp_be_ai",
+      "path": "run.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to 103.90.225.95:6380. Connection refused."
+    },
+    "redis://:12345@103.90.225.95:6380/2`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "tempo1406/iccp_be_ai",
+      "path": "run.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to 103.90.225.95:6380. Connection refused."
+    },
+    "mongodb+srv://infayou:JM.dHK_PpCnV7%40L@cluster0.zbf0n.mongodb.net/infa?retryWrites=true&w=majority&appName=Cluster0": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "anurag8824/purediamond",
+      "path": "9x.txt",
+      "detail": "ERR OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad"
+    },
+    "redis://:${REDIS_PASSWORD}@redis:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ComputerAnything/cpta_blog",
+      "path": "TODO.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "mongodb+srv://youruser:yourpassword@cluster0.xxxxx.mongodb.net/lumin": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "ixmuted/Lumin",
+      "path": "SETUP.md",
+      "detail": "ERR ConfigurationError: The DNS query name does not exist: _mongodb._tcp.cluster0.xxxxx.mongod"
+    },
+    "redis://default:your_password@your-endpoint.upstash.io:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ixmuted/Lumin",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to your-endpoint.upstash.io:6379. Name or service "
+    },
+    "postgresql://${DB_USER}:${DB_PASS}@postgres:5432/plume_production": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "pulgamecanica/Hackathon-JardinDacclimatation",
+      "path": "setup.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "redis://redis:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "pulgamecanica/Hackathon-JardinDacclimatation",
+      "path": "setup.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "postgresql://user:pass@host:5432/indonesian_tour_travel": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "rahmatez/indonesian-tour-travel",
+      "path": "plan.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "redis://...`).": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "lapinex/collab",
+      "path": "ENV.md",
+      "detail": "ERR UnicodeError: encoding with 'idna' codec failed (UnicodeError: label empty or too lo"
+    },
+    "redis://${process.env.REDIS_HOST": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "waveywaves/mirrord-cursor-windsurf-vscode-extension-tutorial",
+      "path": "blog.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to ${process.env.redis_host:6379. Name or service "
+    },
+    "redis://:${process.env.REDIS_CLUSTER_PASSWORD}@${process.env.REDIS_CLUSTER_HOST}:${process.env.REDIS_CLUSTER_PORT}`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "waveywaves/mirrord-cursor-windsurf-vscode-extension-tutorial",
+      "path": "blog.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '${process.env.REDIS_CLUSTE"
+    },
+    "postgres://opendirectory:${DB_PASSWORD}@postgres/appstore": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Chregu12/OpenDirectory",
+      "path": "PLAN.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgres://opendirectory:${DB_PASSWORD}@postgres/compliance": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Chregu12/OpenDirectory",
+      "path": "PLAN.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgres://opendirectory:${DB_PASSWORD}@postgres/audit": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Chregu12/OpenDirectory",
+      "path": "PLAN.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "redis://:${REDIS_PASSWORD}@redis:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Chregu12/OpenDirectory",
+      "path": "PLAN.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "postgresql://user:pass@your-managed-pg:5432/db?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "hoseain756/LLM-MR-API-KEY",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: could not translate host name \"your-managed-pg\" to address: Temporary "
+    },
+    "redis://:password@your-managed-redis:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "hoseain756/LLM-MR-API-KEY",
+      "path": "DOCS.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to your-managed-redis:6379. Temporary failure in n"
+    },
+    "redis://172.17.0.1:6379`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "linto-ai/linto-stt",
+      "path": "ENV.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379`'"
+    },
+    "postgresql://user:{{": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "smirta/bao-secrets-integration",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: invalid integer value \"{{\" for connection option \"port\"\n"
+    },
+    "redis://:{{": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "smirta/bao-secrets-integration",
+      "path": "DOCS.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '{{'"
+    },
+    "redis://\u2026": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "byjg/php-gluo-laravel",
+      "path": "TODO.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to \u2026:6379. Name or service not known."
+    },
+    "postgresql://zylo:password@postgres:5432/zylo": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Ankush321-collab/ridershield",
+      "path": "trd.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgresql://zylo:password@localhost:5432/zylo": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Ankush321-collab/ridershield",
+      "path": "trd.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "redis://:@redis:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Ankush321-collab/ridershield",
+      "path": "trd.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://host:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "droidnoob/murmur-ai",
+      "path": "docs.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to host:6379. Temporary failure in name resolution"
+    },
+    "redis://": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "uptutu/bimawen",
+      "path": "TODO.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "postgres://${var.db_user}:${var.db_password}@${aws_db_instance.mydb.address}:5432/${var.db_name": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "loftwah/ubuntu-box",
+      "path": "ecs.md",
+      "detail": "ERR OperationalError: could not translate host name \"${aws_db_instance.mydb.address}\" to add"
+    },
+    "postgres://user:password@db:5432/app": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "loftwah/ubuntu-box",
+      "path": "ecs.md",
+      "detail": "ERR OperationalError: could not translate host name \"db\" to address: Temporary failure in na"
+    },
+    "postgres://localhost:5432/app": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "loftwah/ubuntu-box",
+      "path": "ecs.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "redis://${aws_elasticache_replication_group.myredis.primary_endpoint_address}:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "loftwah/ubuntu-box",
+      "path": "ecs.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to ${aws_elasticache_replication_group.myredis.pri"
+    },
+    "postgresql://user:pass@host:5432/dental_agent": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Sugusdaddy/dental-whatsapp-agent",
+      "path": "TODO.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "redis://xxxxxx/y": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Colean128/mee6",
+      "path": "ENV.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to xxxxxx:6379. Temporary failure in name resoluti"
+    },
+    "postgres://...": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "agam-lang/agam",
+      "path": "note.md",
+      "detail": "ERR OperationalError: could not translate host name \"...\" to address: Name or service not kn"
+    },
+    "mysql://...": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "agam-lang/agam",
+      "path": "note.md",
+      "detail": "ERR UnicodeError: encoding with 'idna' codec failed (UnicodeError: label empty or too lo"
+    },
+    "redis://:dev_redis_password@localhost:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "analoguezone/szamla-api",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "redis://:@127.0.0.1:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "matiastang/bingwallpaper",
+      "path": "DEV.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused."
+    },
+    "redis://:password@redis-server:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "matiastang/bingwallpaper",
+      "path": "DEV.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis-server:6379. Temporary failure in name re"
+    },
+    "postgresql://kes_lms:your-strong-password@localhost:5432/kes_lms?schema=public": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "mangalam-gaud/kes-lms",
+      "path": "host.md",
+      "detail": "ERR ProgrammingError: invalid dsn: invalid URI query parameter: \"schema\"\n"
+    },
+    "redis://:your-redis-password@localhost:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "mangalam-gaud/kes-lms",
+      "path": "host.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "postgresql://...`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "pkheria7/DBMS_EL_Project",
+      "path": "WORK.md",
+      "detail": "ERR OperationalError: could not translate host name \"...`\" to address: Name or service not k"
+    },
+    "mongodb+srv://...": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "pkheria7/DBMS_EL_Project",
+      "path": "WORK.md",
+      "detail": "ERR ConfigurationError: A DNS label is empty."
+    },
+    "redis://:password@host:6379`.": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "PizzaMarinara/tinker-artifacts",
+      "path": "GUIDE.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379`.'"
+    },
+    "redis://{{": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "putridparrot/software-engineering-notes",
+      "path": "Helm.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to {{:6379. Name or service not known."
+    },
+    "redis://[username][:password@]host[:port][/database": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Manan-Santoki/Feather",
+      "path": "plan.md",
+      "detail": "ERR ValueError: Invalid IPv6 URL"
+    },
+    "postgresql://user:pass@ep-xxx-xxx.region.aws.neon.tech/neondb?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "it6955039-cloud/pikly-ecom",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"ep-xxx-xxx.region.aws.neon.tech\" to add"
+    },
+    "postgresql://user:pass@ep-xxx.neon.tech/neondb?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "it6955039-cloud/pikly-ecom",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"ep-xxx.neon.tech\" to address: No addres"
+    },
+    "rediss://default:token@us1-xxx.upstash.io:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "it6955039-cloud/pikly-ecom",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to us1-xxx.upstash.io:6379. Name or service not kn"
+    },
+    "rediss://...": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "it6955039-cloud/pikly-ecom",
+      "path": "SETUP.md",
+      "detail": "ERR UnicodeError: encoding with 'idna' codec failed (UnicodeError: label empty or too lo"
+    },
+    "redis://`.": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "it6955039-cloud/pikly-ecom",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to `.:6379. Name or service not known."
+    },
+    "postgresql://${POSTGRES_HOST:postgres}:5432/${POSTGRES_DB:sdoc_db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "metatech-programmer/sdoc",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: invalid integer value \"postgres}:5432\" for connection option \"port\"\n"
+    },
+    "postgresql://postgres:5432/sdoc_db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "metatech-programmer/sdoc",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgresql://postgres:5432/${POSTGRES_DB:-sdoc_db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "metatech-programmer/sdoc",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/unleash_db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "metatech-programmer/sdoc",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "redis://:${REDIS_PASSWORD}@redis:6379/1": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "metatech-programmer/sdoc",
+      "path": "SPEC.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://:${REDIS_PASSWORD}@redis:6379/2": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "metatech-programmer/sdoc",
+      "path": "SPEC.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "postgres://app:pw@localhost:5432/orders": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Av3nger123/artemis",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgresql://`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Av3nger123/artemis",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"`\" to address: Name or service not know"
+    },
+    "mongodb://127.0.0.1:27018/iccp_ai": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "tempo1406/iccp_be_ai",
+      "path": "run.md",
+      "detail": "ERR ServerSelectionTimeoutError: 127.0.0.1:27018: [Errno 111] Connection refused (configured timeouts: "
+    },
+    "redis://:${REDIS_PASSWORD}@192.168.1.10:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "TheBabelDragon/aurora-swarm-btc",
+      "path": "MESH.md",
+      "detail": "ERR TimeoutError: Timeout connecting to server"
+    },
+    "mysql://`": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "Av3nger123/artemis",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: (2003, \"Can't connect to MySQL server on '`' ([Errno -2] Name or servi"
+    },
+    "redis://:pw@host:6379/0`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Av3nger123/artemis",
+      "path": "SPEC.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to host:6379. Temporary failure in name resolution"
+    },
+    "postgresql://postgres:postgres@postgres:5432/trade_signals": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "ocrosby/trade-signals",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "redis://:redis_password@redis:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ocrosby/trade-signals",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolutio"
+    },
+    "redis://[user:pass@]host:port/db`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "itbaby/tedis",
+      "path": "PLAN.md",
+      "detail": "ERR ValueError: ']host' does not appear to be an IPv4 or IPv6 address"
+    },
+    "mongodb://admin:password@localhost:27017/restaurant_db?authSource=admin": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "Shivaprasadfarale/restau",
+      "path": "SETUP.md",
+      "detail": "ERR ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused (configured timeouts: "
+    },
+    "mongodb://localhost:27017/restaurant_db": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "Shivaprasadfarale/restau",
+      "path": "SETUP.md",
+      "detail": "ERR ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused (configured timeouts: "
+    },
+    "redis://:wvGLXqhDvbPcpDv7UrnIglB@138.68.135.93:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "anurag8824/purediamond",
+      "path": "9x.txt",
+      "detail": "ERR TimeoutError: Timeout connecting to server"
+    },
+    "redis://:wvGLXqhDvbPcpDv7UrnIglB@172.236.19.246:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "anurag8824/purediamond",
+      "path": "9x.txt",
+      "detail": "ERR TimeoutError: Timeout connecting to server"
+    },
+    "mongodb://...": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "agam-lang/agam",
+      "path": "note.md",
+      "detail": "ERR ServerSelectionTimeoutError: encoding with 'idna' codec failed (UnicodeError: label empty or too lo"
+    },
+    "mongodb://`": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "Av3nger123/artemis",
+      "path": "SPEC.md",
+      "detail": "ERR ServerSelectionTimeoutError: `:27017: [Errno -2] Name or service not known (configured timeouts: so"
+    },
+    "mongodb://user:pw@host:27017/shop?authSource=admin`.": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "Av3nger123/artemis",
+      "path": "SPEC.md",
+      "detail": "ERR ServerSelectionTimeoutError: host:27017: [Errno -3] Temporary failure in name resolution (configure"
+    }
+  }
 }
