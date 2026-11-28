@@ -4,5 +4,1126 @@
   "db": {},
   "aws": {},
   "api": {},
-  "detected": {}
+  "detected": {
+    "-----BEGIN RSA PRIVATE KEY-----": {
+      "name": "ssh_key",
+      "cat": "other",
+      "check": false,
+      "repo": "raptor7197/web-application-sec-project",
+      "path": "backend/seeded-secret.env",
+      "detail": ""
+    },
+    "postgresql://postgres:password@localhost:5432/ogcapi": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "camptocamp/oapi-poc",
+      "path": ".env",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgresql://postgres:sekrit@localhost:5432": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "unisonweb/cloud-api",
+      "path": "cloud.env",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://postgres:postgres@localhost:5432/tournament": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "drmodun/tournament-app",
+      "path": ".env",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "redis://localhost:6379": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "unisonweb/cloud-api",
+      "path": "cloud.env",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "postgres://...": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "superagent-ai/vibekit",
+      "path": "LLM.md",
+      "detail": "ERR OperationalError: could not translate host name \"...\" to address: Name or service not kn"
+    },
+    "postgres://(": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "rubyreferences/rubychanges",
+      "path": "3.2.md",
+      "detail": "ERR OperationalError: could not translate host name \"(\" to address: Name or service not know"
+    },
+    "postgres://(?": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "rubyreferences/rubychanges",
+      "path": "3.2.md",
+      "detail": "ERR OperationalError: could not translate host name \"(\" to address: Name or service not know"
+    },
+    "postgres:///osm_posm": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "posm/posm-replay-tool",
+      "path": "LOCAL.md",
+      "detail": "ERR OperationalError: connection to server on socket \"/var/run/postgresql/.s.PGSQL.5432\" fai"
+    },
+    "postgres:///osm_upstream": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "posm/posm-replay-tool",
+      "path": "LOCAL.md",
+      "detail": "ERR OperationalError: connection to server on socket \"/var/run/postgresql/.s.PGSQL.5432\" fai"
+    },
+    "postgres:///sgcache": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "vfxetc/sgcache",
+      "path": "TODO.txt",
+      "detail": "ERR OperationalError: connection to server on socket \"/var/run/postgresql/.s.PGSQL.5432\" fai"
+    },
+    "postgres://...):": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "cybertec-postgresql/pg_hardstorage",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"...)\" to address: Name or service not k"
+    },
+    "postgres://backup@db1.example.com/postgres": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "cybertec-postgresql/pg_hardstorage",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"db1.example.com\" to address: No address"
+    },
+    "postgres://admin:secret@foo.amazonaws.com": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "rubyreferences/rubychanges",
+      "path": "3.2.md",
+      "detail": "ERR OperationalError: could not translate host name \"foo.amazonaws.com\" to address: Name or "
+    },
+    "postgres://user:pass@host:5432/mydb?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "psrth/mori",
+      "path": "SKILL.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgres://user:pass@host:26257/mydb?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "psrth/mori",
+      "path": "SKILL.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgres://user:pass@127.0.0.1:5432/mydb": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "psrth/mori",
+      "path": "SKILL.md",
+      "detail": "ERR OperationalError: connection to server at \"127.0.0.1\", port 5432 failed: Connection refu"
+    },
+    "postgres://user:pass@prod-host:5432/mydb": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "psrth/mori",
+      "path": "SKILL.md",
+      "detail": "ERR OperationalError: could not translate host name \"prod-host\" to address: Temporary failur"
+    },
+    "redis://:password@host:6379/0": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "psrth/mori",
+      "path": "SKILL.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to host:6379. Temporary failure in name resolution"
+    },
+    "postgresql://localhost/${Your": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "carbonplan/offsets-db-api",
+      "path": "notes.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://...`.": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "MISP/matrix-misp-bot",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"...`.\" to address: Name or service not "
+    },
+    "postgres://username:password@localhost/dbname?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "MISP/matrix-misp-bot",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://\u2026`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "JasGujral/mokata-oss",
+      "path": "llms.txt",
+      "detail": "ERR OperationalError: could not translate host name \"\u2026`\" to address: Name or service not kno"
+    },
+    "postgres://\u2026": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "rust-off-rails/rustoffrails",
+      "path": "cli.md",
+      "detail": "ERR OperationalError: could not translate host name \"\u2026\" to address: Name or service not know"
+    },
+    "postgres://`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "oboard/morm",
+      "path": "TODO.md",
+      "detail": "ERR OperationalError: could not translate host name \"`\" to address: Name or service not know"
+    },
+    "postgresql://`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "oboard/morm",
+      "path": "TODO.md",
+      "detail": "ERR OperationalError: could not translate host name \"`\" to address: Name or service not know"
+    },
+    "mysql://`": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "oboard/morm",
+      "path": "TODO.md",
+      "detail": "ERR OperationalError: (2003, \"Can't connect to MySQL server on '`' ([Errno -2] Name or servi"
+    },
+    "mysql://user:pass@host:3306/mydb": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "psrth/mori",
+      "path": "SKILL.md",
+      "detail": "ERR OperationalError: (2003, \"Can't connect to MySQL server on 'host' ([Errno -3] Temporary "
+    },
+    "postgres://localhost/mydb": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "runelock-io/rune",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://prod-host/mydb": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "runelock-io/rune",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: could not translate host name \"prod-host\" to address: Temporary failur"
+    },
+    "postgres://old-host/mydb": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "runelock-io/rune",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: could not translate host name \"old-host\" to address: Temporary failure"
+    },
+    "postgres://localhost/myapp_dev": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "runelock-io/rune",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://prod-db/app": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "runelock-io/rune",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: could not translate host name \"prod-db\" to address: Temporary failure "
+    },
+    "postgres://staging-db/app": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "runelock-io/rune",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: could not translate host name \"staging-db\" to address: Temporary failu"
+    },
+    "postgres://user:pass@host:5432/cnpj": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "caiopizzol/cnpj-data-pipeline",
+      "path": "llms.txt",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgres://ci:ci@postgres:5432/ci_db?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "lenhattri/kaeshi-migrate",
+      "path": "AGENT.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgres://user:pass@host:5432/cnpj?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "caiopizzol/cnpj-data-pipeline",
+      "path": "llms.txt",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgres://user:pass@host:5432/cnpj?options=-c%20search_path%3Dcnpj": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "caiopizzol/cnpj-data-pipeline",
+      "path": "llms.txt",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "redis://your-redis-url": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "Orenda-Project/rumi-platform",
+      "path": "SETUP.md",
+      "detail": "ERR ConnectionError: Error -3 connecting to your-redis-url:6379. Temporary failure in name "
+    },
+    "postgres://${DB_HOST}:${DB_PORT}/mydb": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "groschi24/zonfig",
+      "path": "TODO.md",
+      "detail": "ERR OperationalError: invalid integer value \"${DB_PORT}\" for connection option \"port\"\n"
+    },
+    "postgres://user:password@host:5432/dbname?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Orenda-Project/rumi-platform",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "mysql://user:pass@`": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "wisecort/LogDeck",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: (2003, \"Can't connect to MySQL server on '`' ([Errno -2] Name or servi"
+    },
+    "redis://`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "wisecort/LogDeck",
+      "path": "SPEC.md",
+      "detail": "ERR ConnectionError: Error -2 connecting to `:6379. Name or service not known."
+    },
+    "postgres://localhost/myapp": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "guhcostan/mac-cleaner-cli",
+      "path": "IDEAS.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://...`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "iamShimanto/llmswitch",
+      "path": "RUN.md",
+      "detail": "ERR OperationalError: could not translate host name \"...`\" to address: Name or service not k"
+    },
+    "postgres://user:pass@host:5432/db?sslmode=...`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "lfglfg11/onehub-db-transfer",
+      "path": "log.md",
+      "detail": "ERR OperationalError: invalid sslmode value: \"...`\"\n"
+    },
+    "postgres://`\uff1bMySQL": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "lfglfg11/onehub-db-transfer",
+      "path": "log.md",
+      "detail": "ERR OperationalError: could not translate host name \"`\uff1bMySQL\" to address: Name or service no"
+    },
+    "postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/pos`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "luchodelfuturo/pf-henry-point-of-sale",
+      "path": "copy.md",
+      "detail": "ERR OperationalError: could not translate host name \"${DB_HOST}\" to address: Name or service"
+    },
+    "postgres://new:asdfasdf@localhost:5432/django": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "bthek1/djangox_template",
+      "path": "env.txt",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://$DB_USER:$DB_PASSWORD@$PG_CONTAINER:$DB_PORT/$DB_NAME?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "FatmanUK/emerald_fb",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: invalid integer value \"$DB_PORT\" for connection option \"port\"\n"
+    },
+    "mongodb+srv://`": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "wisecort/LogDeck",
+      "path": "SPEC.md",
+      "detail": "ERR ConfigurationError: The DNS query name does not exist: _mongodb._tcp.`."
+    },
+    "postgres://$DB_USER:$DB_PASSWORD@192.168.5.214:$DB_PORT/$DB_NAME?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "FatmanUK/emerald_fb",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: invalid integer value \"$DB_PORT\" for connection option \"port\"\n"
+    },
+    "postgres://...`).": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "dustindog101/crypto-ecom-template",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"...`).\" to address: Name or service not"
+    },
+    "postgres://user:pass@ep-xyz.neon.tech/neondb?sslmode=require`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "dustindog101/crypto-ecom-template",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: invalid sslmode value: \"require`\"\n"
+    },
+    "postgres://dodongtruongthoi:secure_password_123@localhost:5432/dodongtruongthoi": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "vuongthanh148/dodongtruongthoi_fe",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "mongodb+srv://MaciasDB:sNW8Lnq7LwL0NIxq@clustermacias.wqqvq.mongodb.net/Ramon_TI81?retryWrites=true&w=majority": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "JonayUT/urfuture",
+      "path": ".env",
+      "detail": "ERR ConfigurationError: The DNS query name does not exist: _mongodb._tcp.clustermacias.wqqvq.m"
+    },
+    "postgresql://user:pass@host:port/dbname": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Subhamsidhanta/Shiritori-Method-Game",
+      "path": "FIXES.md",
+      "detail": "ERR OperationalError: invalid integer value \"port\" for connection option \"port\"\n"
+    },
+    "postgres://%s:%s@%s:%s/%s?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "alextanhongpin/go-learn",
+      "path": "uow.md",
+      "detail": "ERR ProgrammingError: invalid dsn: invalid percent-encoded token: \"%s\"\n"
+    },
+    "postgres:///terrier?host=/run/postgresql`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "ScottyLabs/terrier-old",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server on socket \"/run/postgresql`/.s.PGSQL.5432\" failed"
+    },
+    "postgres://user:pass@host:5432/terrier`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "ScottyLabs/terrier-old",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgres://mailman:mailmanpass@database/mailmandb": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "maxking/docker-mailman",
+      "path": "NEWS.md",
+      "detail": "ERR OperationalError: could not translate host name \"database\" to address: Temporary failure"
+    },
+    "redis://host:6379`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ScottyLabs/terrier-old",
+      "path": "SETUP.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379`'"
+    },
+    "redis://:password@host:6379`": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "ScottyLabs/terrier-old",
+      "path": "SETUP.md",
+      "detail": "ERR ValueError: Port could not be cast to integer value as '6379`'"
+    },
+    "postgres://[db-user].[project-ref]:[db-password]@aws-0-[aws-region].pooler.supabase.com:6543/[db-name]?pgbouncer=true&connection_limit=1": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "devops-dynamics/devops-dynamics-website",
+      "path": "INS.md",
+      "detail": "ERR ProgrammingError: invalid dsn: invalid URI query parameter: \"pgbouncer\"\n"
+    },
+    "postgres://[db-user].[project-ref]:[db-password]@aws-0-[aws-region].pooler.supabase.com:5432/[db-name": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "devops-dynamics/devops-dynamics-website",
+      "path": "INS.md",
+      "detail": "ERR OperationalError: could not translate host name \"aws-0-[aws-region].pooler.supabase.com\""
+    },
+    "postgres://user:pass@host/dbname": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "alfateam/orange-orm",
+      "path": "SKILL.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "mysql://user:pass@host/dbname": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "alfateam/orange-orm",
+      "path": "SKILL.md",
+      "detail": "ERR OperationalError: (2003, \"Can't connect to MySQL server on 'host' ([Errno -3] Temporary "
+    },
+    "postgres://$(whoami)@localhost:5432/business_copilot": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "dilshod544/capilot",
+      "path": "sql.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://username:password@hostname:5432/dbname": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "brunowego/cookbook",
+      "path": "liam.md",
+      "detail": "ERR OperationalError: could not translate host name \"hostname\" to address: Temporary failure"
+    },
+    "postgres://\u304c\u3064\u3044\u3066\u308b\u304b\u5224\u65ad\u3059\u308b\u30ed\u30b8\u30c3\u30af\u304c`/home/shun/go/pkg/mod/github.com/jackc/pgx/v5@v5.7.1/pgconn/config.go": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "tkeshun/prac-pgx",
+      "path": "memo.md",
+      "detail": "ERR OperationalError: could not translate host name \"\u304c\u3064\u3044\u3066\u308b\u304b\u5224\u65ad\u3059\u308b\u30ed\u30b8\u30c3\u30af\u304c`\" to address: Name or s"
+    },
+    "postgres://\u3082\u3057\u304f\u306fpostgresql://\u304c\u542b\u307e\u308c\u3066\u305f\u3089URI\u5f62\u5f0f\u3060\u3068\u5224\u65ad\u3059\u308b": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "tkeshun/prac-pgx",
+      "path": "memo.md",
+      "detail": "ERR OperationalError: could not translate host name \"\u3082\u3057\u304f\u306fpostgresql\" to address: Name or ser"
+    },
+    "postgres://postgres:postgres@localhost:5432/postgres`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "tkeshun/prac-pgx",
+      "path": "memo.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://.../postgres?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "pmpetit/mongo2pg",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: could not translate host name \"...\" to address: Name or service not kn"
+    },
+    "postgres://postgres:x@localhost:5432/postgres?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "pmpetit/mongo2pg",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://postgres:postgres@localhost:5432/postgres": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "tkeshun/prac-pgx",
+      "path": "memo.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "mongodb://localhost:27017": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "miroshar-success/swimming-school-management",
+      "path": ".env",
+      "detail": "ERR ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused (configured timeouts: "
+    },
+    "postgres://tree:mypwd@127.0.0.1:5432/viper-test?connect_timeout=5&sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "vicanso/articles",
+      "path": "viper.md",
+      "detail": "ERR OperationalError: connection to server at \"127.0.0.1\", port 5432 failed: Connection refu"
+    },
+    "postgres://$DB_USER:$DB_PASSWORD@192.168.5.214:15432/$DB_NAME?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "FatmanUK/emerald_fb",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"192.168.5.214\", port 15432 failed: timeout ex"
+    },
+    "mongodb://user:pass@host:27017": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "pmpetit/mongo2pg",
+      "path": "USAGE.md",
+      "detail": "ERR ServerSelectionTimeoutError: host:27017: [Errno -3] Temporary failure in name resolution (configure"
+    },
+    "mongodb://user:pass@host:27017/?authSource=admin&tls=true": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "pmpetit/mongo2pg",
+      "path": "USAGE.md",
+      "detail": "ERR ServerSelectionTimeoutError: host:27017: [Errno -3] Temporary failure in name resolution (configure"
+    },
+    "postgres://...`)?": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Errold146/site-nuxt",
+      "path": "doc.txt",
+      "detail": "ERR OperationalError: could not translate host name \"...`)\" to address: Name or service not "
+    },
+    "postgres://localhost:...`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Errold146/site-nuxt",
+      "path": "doc.txt",
+      "detail": "ERR OperationalError: invalid integer value \"...`\" for connection option \"port\"\n"
+    },
+    "postgres://USER:PASSWORD@pooled.db.prisma.io:5432/postgres?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "dataweston/Local-Budget",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"pooled.db.prisma.io\" (45.63.92.86), port 5432"
+    },
+    "postgres://USER:PASSWORD@db.prisma.io:5432/postgres?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "dataweston/Local-Budget",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"db.prisma.io\" (45.63.92.86), port 5432 failed"
+    },
+    "mongodb://...": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "pmpetit/mongo2pg",
+      "path": "USAGE.md",
+      "detail": "ERR ServerSelectionTimeoutError: encoding with 'idna' codec failed (UnicodeError: label empty or too lo"
+    },
+    "postgresql://username:password@host:5432/database": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Tauimi/next",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "danielishakutv/theplatinumkitchen",
+      "path": "notes.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "opsworks-co/origin-cli",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: connection to server on socket \"/var/run/postgresql/.s.PGSQL.5432\" fai"
+    },
+    "mongodb://": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "opsworks-co/origin-cli",
+      "path": "DOCS.md",
+      "detail": "ERR InvalidURI: Must provide at least one hostname or IP"
+    },
+    "mongodb://user:pass@localhost:27017": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "pmpetit/mongo2pg",
+      "path": "USAGE.md",
+      "detail": "ERR ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused (configured timeouts: "
+    },
+    "mongodb://user:pass@localhost:2717/?authSource=admin": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "pmpetit/mongo2pg",
+      "path": "USAGE.md",
+      "detail": "ERR ServerSelectionTimeoutError: localhost:2717: [Errno 111] Connection refused (configured timeouts: s"
+    },
+    "mongodb://user:pass@localhost:27017/?authSource=admin": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "pmpetit/mongo2pg",
+      "path": "USAGE.md",
+      "detail": "ERR ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused (configured timeouts: "
+    },
+    "postgresql://user@localhost:5432/mirrorbuddy": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "FightTheStroke/MirrorBuddy",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://{{DB_USER}}:{{DB_PASS}}@localhost/app": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "broisnees/aenvyy",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://admin:s3cr3t@localhost/app": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "broisnees/aenvyy",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://app_user:app_password@localhost:5432/app_db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Angel-crypt/gateflow-backend",
+      "path": "GUIDE.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "mongodb://host:port": {
+      "name": "db_mongo",
+      "cat": "db",
+      "check": true,
+      "repo": "Proteusiq/dotfiles",
+      "path": "Tools.md",
+      "detail": "ERR ValueError: Port contains non-digit characters. Hint: username and password must b"
+    },
+    "postgres://localhost/***": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "dj-pearson/vault-verse",
+      "path": "PRD.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres:///app`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "itsmedit/grenat",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: connection to server on socket \"/var/run/postgresql/.s.PGSQL.5432\" fai"
+    },
+    "postgres://db.acme.io`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "itsmedit/grenat",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"db.acme.io`\" to address: Name or servic"
+    },
+    "postgres://localhost:5432/mydb": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "jpwesselink/dotsec-rs",
+      "path": "QA.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "redis://localhost/***": {
+      "name": "db_redis",
+      "cat": "db",
+      "check": true,
+      "repo": "dj-pearson/vault-verse",
+      "path": "PRD.md",
+      "detail": "ERR ConnectionError: Error 111 connecting to localhost:6379. Connection refused."
+    },
+    "postgres://|DATABASE_URL=": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "jpwesselink/dotsec-rs",
+      "path": "QA.md",
+      "detail": "ERR OperationalError: could not translate host name \"|DATABASE_URL=\" to address: Name or ser"
+    },
+    "mysql://": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "opsworks-co/origin-cli",
+      "path": "DOCS.md",
+      "detail": "ERR OperationalError: (2003, \"Can't connect to MySQL server on 'localhost' ([Errno 111] Conn"
+    },
+    "postgres://|": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "jpwesselink/dotsec-rs",
+      "path": "QA.md",
+      "detail": "ERR OperationalError: could not translate host name \"|\" to address: Name or service not know"
+    },
+    "postgres://user:pass@localhost/db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "hemanth/piragi",
+      "path": "API.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgres://postgres:pradeep@localhost:5432/Websage?sslmode=disable`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "jkrobstar/websage",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: invalid sslmode value: \"disable`\"\n"
+    },
+    "postgres://hoopdevuser:1a2b3c4d@127.0.0.1:5449/hoopdevdb?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "hoophq/hoop",
+      "path": "DEV.md",
+      "detail": "ERR OperationalError: connection to server at \"127.0.0.1\", port 5449 failed: Connection refu"
+    },
+    "postgres://accelerate.prisma-data.net/?api_key=\u2026`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "TeRmInAtOrX14/hrisfinal",
+      "path": "NOTES.md",
+      "detail": "ERR ProgrammingError: invalid dsn: invalid URI query parameter: \"api_key\"\n"
+    },
+    "postgres://new-host/...": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Kheav-Kienghok/terraform-vault-secrets",
+      "path": "GUIDE.md",
+      "detail": "ERR OperationalError: could not translate host name \"new-host\" to address: Temporary failure"
+    },
+    "postgres://db.prisma.io/?api_key=\u2026`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "TeRmInAtOrX14/hrisfinal",
+      "path": "NOTES.md",
+      "detail": "ERR ProgrammingError: invalid dsn: invalid URI query parameter: \"api_key\"\n"
+    },
+    "mysql://user:pass@host/db": {
+      "name": "db_mysql",
+      "cat": "db",
+      "check": true,
+      "repo": "GL3PBBG/GL3",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: (2003, \"Can't connect to MySQL server on 'host' ([Errno -3] Temporary "
+    },
+    "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/hasura_metadata": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "mrtousif/hasura-keycloak-nx",
+      "path": "BLOG.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "mrtousif/hasura-keycloak-nx",
+      "path": "BLOG.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgres://user:pass@db.example.com:5432/myapp": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "jpwesselink/dotsec-rs",
+      "path": "QA.md",
+      "detail": "ERR OperationalError: could not translate host name \"db.example.com\" to address: No address "
+    },
+    "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}?sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "mrtousif/hasura-keycloak-nx",
+      "path": "BLOG.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgresql://postgres:5432/keycloak_db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "mrtousif/hasura-keycloak-nx",
+      "path": "BLOG.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgresql://user:password@host:5432/database": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "captain-soban/sizing-tool",
+      "path": "NOTES.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgres://real_user:real_pass@real_host/db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "captain-soban/sizing-tool",
+      "path": "NOTES.md",
+      "detail": "ERR OperationalError: could not translate host name \"real_host\" to address: Temporary failur"
+    },
+    "postgres://.*@.*": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "captain-soban/sizing-tool",
+      "path": "NOTES.md",
+      "detail": "ERR OperationalError: could not translate host name \".*\" to address: Name or service not kno"
+    },
+    "postgres://${DB_HOST}:${DB_PORT}/${DB_NAME}`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "elydelva/better-env",
+      "path": "PLAN.md",
+      "detail": "ERR OperationalError: invalid integer value \"${DB_PORT}\" for connection option \"port\"\n"
+    },
+    "postgres://${DB_HOST}:${DB_PORT}/${DB_NAME}`.": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "elydelva/better-env",
+      "path": "PLAN.md",
+      "detail": "ERR OperationalError: invalid integer value \"${DB_PORT}\" for connection option \"port\"\n"
+    },
+    "postgres://user:pass@host/db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "captain-soban/sizing-tool",
+      "path": "NOTES.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgresql://localbbs_user:localbbs_pass@localhost:5432/localbbs": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "kyunghyuncho/agent-forum",
+      "path": "APP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgresql://postgres:password@localhost:5432/localbbs": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "kyunghyuncho/agent-forum",
+      "path": "APP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgresql://username:password@localhost/hvip_dashboard": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "shaed-rp/hvip",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgresql://user:password@localhost:5432/backy": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "varshneydevansh/backy",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"localhost\" (::1), port 5432 failed: Connectio"
+    },
+    "postgresql://user:password@host:5432/backy": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "varshneydevansh/backy",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: could not translate host name \"host\" to address: Temporary failure in "
+    },
+    "postgres://\u2026@kso8w0k...:5432/demo_db": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "paulocerez/postgres-provisioner",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: could not translate host name \"kso8w0k...\" to address: Name or service"
+    },
+    "postgres://...@db.prisma.io:5432/postgres?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "dataweston/Local-Budget",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"db.prisma.io\" (45.63.92.86), port 5432 failed"
+    },
+    "postgres://\u2026@pg.example.com:443/demo_db?sslmode=verify-full&sslnegotiation=direct": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "paulocerez/postgres-provisioner",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: could not translate host name \"pg.example.com\" to address: No address "
+    },
+    "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:${DATABASE_PORT}/${POSTGRES_USER": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "DO-JENC/data-go-fast",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: invalid integer value \"${DATABASE_PORT}\" for connection option \"port\"\n"
+    },
+    "postgres://postgres:": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "s3loy/orbitjob",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: could not translate host name \"postgres\" to address: Temporary failure"
+    },
+    "postgres://\u2026@db.prisma.io:5432/\u2026`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "TeRmInAtOrX14/hrisfinal",
+      "path": "NOTES.md",
+      "detail": "ERR OperationalError: connection to server at \"db.prisma.io\" (45.63.92.86), port 5432 failed"
+    },
+    "postgres://...@pooled.db.prisma.io:5432/postgres?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "dataweston/Local-Budget",
+      "path": "SETUP.md",
+      "detail": "ERR OperationalError: connection to server at \"pooled.db.prisma.io\" (149.28.204.69), port 54"
+    },
+    "postgres://tree:mypwd@10.1.1.1:5432/viper?connect_timeout=5&sslmode=disable": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "vicanso/articles",
+      "path": "viper.md",
+      "detail": "ERR OperationalError: connection to server at \"10.1.1.1\", port 5432 failed: No route to host"
+    },
+    "postgres://accelerate.prisma-data.net/...": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "Errold146/site-nuxt",
+      "path": "doc.txt",
+      "detail": "ERR TimeoutError: "
+    },
+    "postgres://\u2026@2.28.117.37:5433/demo_db?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "paulocerez/postgres-provisioner",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: connection to server at \"2.28.117.37\", port 5433 failed: timeout expir"
+    },
+    "postgres://postgres:REAL_PASSWORD@2.28.117.37:5433/demo_db?sslmode=require": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "paulocerez/postgres-provisioner",
+      "path": "USAGE.md",
+      "detail": "ERR OperationalError: connection to server at \"2.28.117.37\", port 5433 failed: timeout expir"
+    },
+    "postgres://\u2026@db.acme.io/app`": {
+      "name": "db_postgres",
+      "cat": "db",
+      "check": true,
+      "repo": "itsmedit/grenat",
+      "path": "SPEC.md",
+      "detail": "ERR OperationalError: could not translate host name \"db.acme.io\" to address: Temporary failu"
+    }
+  }
 }
